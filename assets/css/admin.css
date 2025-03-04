@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    text-align: center;
+    
     font-family: sans-serif;
 }
 .header{
@@ -74,4 +74,65 @@ body{
 }
 .main-menu-produc a:hover>.an{
     display: block;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền đen mờ */
+    backdrop-filter: blur(5px); /* Làm mờ nền */
+    justify-content: center;
+   
+}
+.overlay1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền đen mờ */
+    backdrop-filter: blur(5px); /* Làm mờ nền */
+    justify-content: center;
+   
+}
+
+/* Hộp hiển thị */
+.modal {
+    margin-top: 30px;
+    width: 800px;
+    height: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal form label{
+    font-weight: bold;
+    
+}
+.modal form input{
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}
+/* Nút đóng */
+.close-btn {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;
+    
 }

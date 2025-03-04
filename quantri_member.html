@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+</head>
+<body>
+    <div class="tong">
+        <div class="overlay" id="overlay1">
+            <div class="modal">
+                <h2>Form Đăng Ký Người Dùng </h2>
+                <form action="quantri-member.html" method="POST">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" name="username" required maxlength="50"><br><br>
+                    
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <label for="diachi">Địa chỉ:</label>
+                    <input type="text" name="diachi" ><br><br>
+                    
+                    <label for="sodienthoai">Số điện thoại:</label>
+                    <input type="tel" id="sodienthoai" name="sodienthoai" maxlength="15"><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" maxlength="100"><br><br>
+                    
+                    <label for="role">Vai trò:</label>
+                    <select id="role" name="role">
+                        <option value="Khách hàng">Khách hàng</option>
+                        <option value="Nhân viên">Nhân viên</option>
+                        <option value="Quản trị viên">Quản trị viên</option>
+                    </select><br><br>
+                    
+                    <label for="ngaytao">Ngày tạo:</label>
+                    <input type="datetime-local" id="ngaytao" name="ngaytao"><br><br>
+                    
+                    <button type="submit">Đăng ký</button>
+                    <button class="close-btn" onclick="hideDiv()">Đóng</button>
+                </form>
+            </div>
+            </div>
+            <div class="overlay" id="overlay2">
+                <div class="modal">
+                    <h2>Form Đăng Ký Người Dùng</h2>
+                    <form action="quantri-member.html" method="POST">
+                        <label for="username">Tên đăng nhập:</label>
+                        <input type="text" id="username" name="username" required maxlength="50"><br><br>
+                        
+                        <label for="password">Mật khẩu:</label>
+                        <input type="password" id="password" name="password" required><br><br>
+                        
+                        <label for="diachi">Địa chỉ:</label>
+                        <input type="text" name="diachi" ><br><br>
+                        
+                        <label for="sodienthoai">Số điện thoại:</label>
+                        <input type="tel" id="sodienthoai" name="sodienthoai" maxlength="15"><br><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="100"><br><br>
+                        
+                        <label for="role">Vai trò:</label>
+                        <select id="role" name="role">  
+                            <option value="Nhân viên">Nhân viên</option>
+                            <option value="Khách hàng">Khách hàng</option>
+                            <option value="Quản trị viên">Quản trị viên</option>
+                        </select><br><br>
+                        
+                        <label for="ngaytao">Ngày tạo:</label>
+                        <input type="datetime-local" id="ngaytao" name="ngaytao"><br><br>
+                        
+                        <button type="submit">Đăng ký</button>
+                        <button class="close-btn" onclick="hideDivv()">Đóng</button>
+                    </form>
+                </div>
+            </div>
+        <div class="header" >
+            <label for="">Trang quản trị Admin</label>
+        </div>
+        <div class="main" >
+            <div class="main-menu">
+                <div class="main-menu-produc">
+                    <a href="index2.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Trang quản trị
+                    </a>
+                </div>
+                <div class="main-menu-produc">
+                    <a href="">
+                        <i class="fa fa-cc" aria-hidden="true"></i>
+                        Conten
+                    </a>
+                    
+                </div>
+                <div class="main-menu-produc">
+                    <a href="quantri_product.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Sản phẩm
+                    </a>
+                    
+                </div>
+                <div class="main-menu-produc">
+                    <a href="quantri- category.html">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        Thể loại
+                    </a>
+                </div>
+                <div class="main-menu-produc">
+                    <a href="">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    Thành viên
+                    </a>
+                </div>
+                <div class="main-menu-produc">
+                    <a href="">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        Thư viện
+                    </a>
+                </div>
+                <div class="main-menu-produc">
+                    <a href="">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        Cài đặt
+                    </a>
+                </div>
+            </div>
+            <div class="main-noidung">
+                <h1>Quản lý nhân viên</h1>
+                <table border="1" >
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên nhân viên</th>
+                        <th>Chức vụ</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td> Phạm Văn Hiến </td>
+                        <td><select>
+                            <Option value="avc" >Khách hàng</Option>
+                            <option value="sdfg">Nhân viên</option>
+                            <option value="sdfg">Quản trị</option>
+                        </select></td>
+                        <td>
+                            <button onclick="showDiv()">Thêm</button>
+                            <button onclick="showDivv()">Sửa</button>
+                            <button onclick="showDiv()">Xóa</button>
+                        </td>
+                        
+                    </tr>
+                </table> 
+            </div>
+        </div>
+        <div class="footer" ></div>
+    </div>
+    <script>
+        function showDiv() {
+            document.getElementById("overlay1").style.display = "flex";
+        }
+        function showDivv() {
+            document.getElementById("overlay2").style.display = "flex";
+        }
+        function hideDiv() {
+            document.getElementById("overlay1").style.display = "none";
+        }
+        function hideDivv() {
+            document.getElementById("overlay2").style.display = "none";
+        }
+    </script>
+</body>
+</html>
